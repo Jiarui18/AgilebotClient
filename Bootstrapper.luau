@@ -3,7 +3,7 @@
 -- Reconstructs the serialized AgileBot folder into ServerStorage.
 -- Source code is stored as byte chunks, not raw long strings.
 
-local ServerStorage = game:GetService("ServerStorage")
+local ServerStorage = script.Parent
 
 local function _s(chunks: {{number}}): string
 	local parts = table.create(#chunks)
